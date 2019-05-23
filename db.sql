@@ -229,7 +229,7 @@ SELECT * FROM Distrito;
 SELECT * FROM Cliente;
 SELECT * FROM Proveedor;
 SELECT * FROM Producto;
-SELECT * FROM Trabajador;
+SELECT ID_trabajador, dni, nombres, apellidos, contacto_de_emergencia FROM Trabajador;
 SELECT * FROM Direccion;
 SELECT * FROM Proveedor_por_producto;
 SELECT COUNT(*) FROM Cliente; -- Muestra el número de clientes registrados
