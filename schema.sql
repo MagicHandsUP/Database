@@ -65,8 +65,11 @@ CREATE TABLE Direccion (
 
 CREATE TABLE Producto (
   ID_producto int NOT NULL,
-  nombre varchar(100) NOT NULL,
-  stock_disponible int NOT NULL);
+  nombre varchar(250) NOT NULL,
+  presentacion varchar(100) NOT NULL,
+  marca varchar(100) NOT NULL,
+  stock_disponible int NOT NULL,
+  precio_de_venta float NOT NULL);
 
 CREATE TABLE Producto_por_servicio (
   ID_producto_por_servicio int NOT NULL,
@@ -79,8 +82,7 @@ CREATE TABLE Proveedor_por_producto(
   ID_proveedor_por_producto int NOT NULL,
   ID_proveedor int NOT NULL,
   ID_producto int NOT NULL);
-  
-  
+
 /* Primary Keys */
 ALTER TABLE Cliente ADD CONSTRAINT PK_cliente PRIMARY KEY(ID_cliente);
 ALTER TABLE Solicitud ADD CONSTRAINT PK_solicitud PRIMARY KEY(ID_solicitud);
